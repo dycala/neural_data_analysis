@@ -11,7 +11,7 @@ function [lasso_data] = lasso_primary(path,save_loc,program,lasso_data)
     
     %% load data and Run LASSO for each cell
     loops_complete = 0;
-    for i = 1:2%length(directory)
+    for i = 1:length(directory)
         cd(path);
         load(directory(i).name);
     
